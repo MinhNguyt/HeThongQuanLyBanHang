@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fmDonViTinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDonViTinh.Designer.cs">
+      <DependentUpon>fmDonViTinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmKhachHang.Designer.cs">
+      <DependentUpon>fmKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmMonAn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fmMonAn.Designer.cs">
       <DependentUpon>fmMonAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmNguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmNguyenLieu.Designer.cs">
+      <DependentUpon>fmNguyenLieu.cs</DependentUpon>
     </Compile>
     <Compile Include="fmTrangChu.cs">
       <SubType>Form</SubType>
@@ -66,8 +84,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmDonViTinh.resx">
+      <DependentUpon>fmDonViTinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmKhachHang.resx">
+      <DependentUpon>fmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmMonAn.resx">
       <DependentUpon>fmMonAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmNguyenLieu.resx">
+      <DependentUpon>fmNguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmTrangChu.resx">
       <DependentUpon>fmTrangChu.cs</DependentUpon>

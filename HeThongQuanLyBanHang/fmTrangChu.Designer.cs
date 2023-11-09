@@ -64,7 +64,7 @@
             // mónĂnToolStripMenuItem
             // 
             this.mónĂnToolStripMenuItem.Name = "mónĂnToolStripMenuItem";
-            this.mónĂnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mónĂnToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
             this.mónĂnToolStripMenuItem.Text = "Món Ăn";
             this.mónĂnToolStripMenuItem.Click += new System.EventHandler(this.mónĂnToolStripMenuItem_Click);
             // 
@@ -73,6 +73,7 @@
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
             this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.kháchHàngToolStripMenuItem.Text = "Khách Hàng";
+            this.kháchHàngToolStripMenuItem.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
             // 
             // nhậpHàngToolStripMenuItem
             // 
@@ -88,12 +89,14 @@
             this.nguyênLiệuToolStripMenuItem.Name = "nguyênLiệuToolStripMenuItem";
             this.nguyênLiệuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.nguyênLiệuToolStripMenuItem.Text = "Nguyên Liệu";
+            this.nguyênLiệuToolStripMenuItem.Click += new System.EventHandler(this.nguyênLiệuToolStripMenuItem_Click);
             // 
             // đơnVịNhậpToolStripMenuItem
             // 
             this.đơnVịNhậpToolStripMenuItem.Name = "đơnVịNhậpToolStripMenuItem";
             this.đơnVịNhậpToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.đơnVịNhậpToolStripMenuItem.Text = "Đơn Vị Nhập";
+            this.đơnVịNhậpToolStripMenuItem.Click += new System.EventHandler(this.đơnVịNhậpToolStripMenuItem_Click);
             // 
             // doanhThuThuầnToolStripMenuItem
             // 
@@ -105,6 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;

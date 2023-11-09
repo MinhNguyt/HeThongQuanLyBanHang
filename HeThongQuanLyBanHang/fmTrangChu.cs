@@ -22,5 +22,23 @@ namespace HeThongQuanLyBanHang
             fmMonAn m = new fmMonAn();
             m.Show();
         }
+
+        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmKhachHang k = new fmKhachHang();
+            k.Show();
+        }
+
+        private void nguyênLiệuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmNguyenLieu n = new fmNguyenLieu();
+            n.Show();
+        }
+
+        private void đơnVịNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmDonViTinh d = new fmDonViTinh();
+            d.Show();
+        }
     }
 }
