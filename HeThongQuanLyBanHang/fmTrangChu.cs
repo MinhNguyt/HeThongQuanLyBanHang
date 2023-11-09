@@ -37,8 +37,32 @@ namespace HeThongQuanLyBanHang
 
         private void đơnVịNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fmDonViTinh d = new fmDonViTinh();
+            fmDonViNhap d = new fmDonViNhap();
             d.Show();
+        }
+
+        private void doanhThuThuầnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmTaiKhoan t = new fmTaiKhoan();
+            t.Show();
+        }
+
+        private void hóaĐơnChiTiếtToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            fmHoaDonChiTiet ct = new fmHoaDonChiTiet();
+            ct.Show();
+        }
+
+        private void bánHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmHoaDon hd = new fmHoaDon();
+            hd.Show();
+        }
+
+        private void nhậpHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmNhapHang nh = new fmNhapHang();
+            nh.Show();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HeThongQuanLyBanHang
 {
-    public partial class fmDonViTinh : Form
+    public partial class fmTaiKhoan : Form
     {
-        public fmDonViTinh()
+        public fmTaiKhoan()
         {
             InitializeComponent();
         }

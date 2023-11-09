@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fmDonViTinh.cs">
+    <Compile Include="fmDonViNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmDonViTinh.Designer.cs">
-      <DependentUpon>fmDonViTinh.cs</DependentUpon>
+    <Compile Include="fmDonViNhap.Designer.cs">
+      <DependentUpon>fmDonViNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmHoaDon.Designer.cs">
+      <DependentUpon>fmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmHoaDonChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmHoaDonChiTiet.Designer.cs">
+      <DependentUpon>fmHoaDonChiTiet.cs</DependentUpon>
     </Compile>
     <Compile Include="fmKhachHang.cs">
       <SubType>Form</SubType>
@@ -70,6 +82,18 @@
     <Compile Include="fmNguyenLieu.Designer.cs">
       <DependentUpon>fmNguyenLieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="fmNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmNhapHang.Designer.cs">
+      <DependentUpon>fmNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmTaiKhoan.Designer.cs">
+      <DependentUpon>fmTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,8 +108,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fmDonViTinh.resx">
-      <DependentUpon>fmDonViTinh.cs</DependentUpon>
+    <EmbeddedResource Include="fmDonViNhap.resx">
+      <DependentUpon>fmDonViNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmHoaDon.resx">
+      <DependentUpon>fmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmHoaDonChiTiet.resx">
+      <DependentUpon>fmHoaDonChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmKhachHang.resx">
       <DependentUpon>fmKhachHang.cs</DependentUpon>
@@ -95,6 +125,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fmNguyenLieu.resx">
       <DependentUpon>fmNguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmNhapHang.resx">
+      <DependentUpon>fmNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmTaiKhoan.resx">
+      <DependentUpon>fmTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmTrangChu.resx">
       <DependentUpon>fmTrangChu.cs</DependentUpon>
