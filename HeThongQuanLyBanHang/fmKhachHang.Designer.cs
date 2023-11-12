@@ -35,9 +35,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,10 +42,6 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaKH,
-            this.SDT,
-            this.DiaChi});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(29, 239);
             this.dataGridView1.Name = "dataGridView1";
@@ -121,29 +114,6 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Tìm kiếm";
             // 
-            // MaKH
-            // 
-            this.MaKH.HeaderText = "Mã khách hàng";
-            this.MaKH.MinimumWidth = 6;
-            this.MaKH.Name = "MaKH";
-            this.MaKH.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.MaKH.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MaKH.Width = 200;
-            // 
-            // SDT
-            // 
-            this.SDT.HeaderText = "Số điện thoại";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            this.SDT.Width = 270;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 220;
-            // 
             // fmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -174,8 +144,5 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
     }
 }

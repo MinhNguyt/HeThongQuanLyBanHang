@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HeThongQuanLyBanHang.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,17 @@ namespace HeThongQuanLyBanHang
         public fmKhachHang()
         {
             InitializeComponent();
+            LoadKhachhangList();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+        void LoadKhachhangList()
+        {
+            string query = "select * from dbo.KHACHHANG";
+            dataGridView1.DataSource = dataProvider.Instance.ExecuteQuery(query);
         }
     }
 }

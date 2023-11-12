@@ -19,9 +19,8 @@ namespace HeThongQuanLyBanHang.DAO
 
         public bool DangNhap(string tenTK, string matkhau)
         {
-            string query = "Select * from TAIKHOAN where TenTK ='"+tenTK+"' and MatKhau ='"+ matkhau+ "'";
-            DataTable result = dataProvider.Instance.ExecuteQuery(query);
-
+            string query = "USP_DANGNHAP @tenTk , @matkhau";
+            DataTable result = dataProvider.Instance.ExecuteQuery(query, new object[] { tenTK, matkhau });
             return result.Rows.Count > 0;
         }
     }
