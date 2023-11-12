@@ -33,11 +33,11 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnDangnhap = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txbMatKhau = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbTenDangNhap = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txbMatKhau = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -99,16 +99,6 @@
             this.panel3.Size = new System.Drawing.Size(531, 59);
             this.panel3.TabIndex = 1;
             // 
-            // txbMatKhau
-            // 
-            this.txbMatKhau.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txbMatKhau.Location = new System.Drawing.Point(206, 19);
-            this.txbMatKhau.Multiline = true;
-            this.txbMatKhau.Name = "txbMatKhau";
-            this.txbMatKhau.Size = new System.Drawing.Size(287, 25);
-            this.txbMatKhau.TabIndex = 1;
-            this.txbMatKhau.UseSystemPasswordChar = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -147,6 +137,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên đăng nhập";
             // 
+            // txbMatKhau
+            // 
+            this.txbMatKhau.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txbMatKhau.Location = new System.Drawing.Point(207, 19);
+            this.txbMatKhau.Multiline = true;
+            this.txbMatKhau.Name = "txbMatKhau";
+            this.txbMatKhau.Size = new System.Drawing.Size(287, 25);
+            this.txbMatKhau.TabIndex = 2;
+            this.txbMatKhau.UseSystemPasswordChar = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -177,9 +177,9 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnDangnhap;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txbMatKhau;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txbTenDangNhap;
+        private System.Windows.Forms.TextBox txbMatKhau;
     }
 }
 

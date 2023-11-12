@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HeThongQuanLyBanHang.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +20,25 @@ namespace HeThongQuanLyBanHang
 
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            fmTrangChu t = new fmTrangChu();
-            t.Show();
+            string tenTK = txbTenDangNhap.Text;
+            string matkhau = txbMatKhau.Text;
+            if (DangNhap(tenTK,matkhau))
+            {
+                fmTrangChu t = new fmTrangChu();
+                t.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!!!");
+            }
         }
+
+        //Kiểm tra đăng nhập
+        bool DangNhap(string tenTK, string matkhau)
+        {
+            return TaikhoanDAO.Instance.DangNhap(tenTK, matkhau);
+        }
+
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
