@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.MaHD = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenDVNH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChiNH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -126,6 +126,8 @@
             this.MaHD.HeaderText = "Mã hóa đơn";
             this.MaHD.MinimumWidth = 6;
             this.MaHD.Name = "MaHD";
+            this.MaHD.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.MaHD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.MaHD.Width = 200;
             // 
             // TenDVNH
@@ -171,7 +173,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn MaHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDVNH;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChiNH;
     }

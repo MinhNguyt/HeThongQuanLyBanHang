@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="DAO\dataProvider.cs" />
     <Compile Include="DAO\TaikhoanDAO.cs" />
+    <Compile Include="fmDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDoanhThu.Designer.cs">
+      <DependentUpon>fmDoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmDonViNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmDoanhThu.resx">
+      <DependentUpon>fmDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmDonViNhap.resx">
       <DependentUpon>fmDonViNhap.cs</DependentUpon>
     </EmbeddedResource>

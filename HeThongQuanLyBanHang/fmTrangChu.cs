@@ -64,5 +64,20 @@ namespace HeThongQuanLyBanHang
             fmNhapHang nh = new fmNhapHang();
             nh.Show();
         }
+
+        private void tàiKhoảnToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

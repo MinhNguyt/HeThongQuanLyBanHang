@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaDV = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.TenDVNH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChiNH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.MaDV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDVNH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChiNH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,27 +56,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(743, 173);
             this.dataGridView1.TabIndex = 13;
-            // 
-            // MaDV
-            // 
-            this.MaDV.HeaderText = "Mã đơn vị";
-            this.MaDV.MinimumWidth = 6;
-            this.MaDV.Name = "MaDV";
-            this.MaDV.Width = 195;
-            // 
-            // TenDVNH
-            // 
-            this.TenDVNH.HeaderText = "Tên đơn vị NH";
-            this.TenDVNH.MinimumWidth = 6;
-            this.TenDVNH.Name = "TenDVNH";
-            this.TenDVNH.Width = 245;
-            // 
-            // DiaChiNH
-            // 
-            this.DiaChiNH.HeaderText = "Địa chỉ nhập hàng";
-            this.DiaChiNH.MinimumWidth = 6;
-            this.DiaChiNH.Name = "DiaChiNH";
-            this.DiaChiNH.Width = 250;
             // 
             // btnXoa
             // 
@@ -142,7 +121,30 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "ĐƠN VỊ NHẬP";
             // 
-            // fmDonViTinh
+            // MaDV
+            // 
+            this.MaDV.HeaderText = "Mã đơn vị";
+            this.MaDV.MinimumWidth = 6;
+            this.MaDV.Name = "MaDV";
+            this.MaDV.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.MaDV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MaDV.Width = 195;
+            // 
+            // TenDVNH
+            // 
+            this.TenDVNH.HeaderText = "Tên đơn vị NH";
+            this.TenDVNH.MinimumWidth = 6;
+            this.TenDVNH.Name = "TenDVNH";
+            this.TenDVNH.Width = 245;
+            // 
+            // DiaChiNH
+            // 
+            this.DiaChiNH.HeaderText = "Địa chỉ nhập hàng";
+            this.DiaChiNH.MinimumWidth = 6;
+            this.DiaChiNH.Name = "DiaChiNH";
+            this.DiaChiNH.Width = 250;
+            // 
+            // fmDonViNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,7 +157,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "fmDonViTinh";
+            this.Name = "fmDonViNhap";
             this.Text = "fmDonViTinh";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -172,7 +174,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn MaDV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDV;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDVNH;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChiNH;
     }

@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Ma = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -132,6 +132,8 @@
             this.Ma.HeaderText = "Mã";
             this.Ma.MinimumWidth = 6;
             this.Ma.Name = "Ma";
+            this.Ma.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Ma.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Ma.Width = 110;
             // 
             // ThoiGian
@@ -146,6 +148,7 @@
             this.SoLuong.HeaderText = "Số lượng";
             this.SoLuong.MinimumWidth = 6;
             this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 125;
             // 
             // ThanhTien
             // 
@@ -197,7 +200,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Ma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ma;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGian;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;

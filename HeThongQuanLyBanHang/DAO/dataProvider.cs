@@ -16,7 +16,7 @@ namespace HeThongQuanLyBanHang.DAO
             get { if (instance == null) instance = new dataProvider(); return dataProvider.instance; }
             private set {dataProvider.instance = value; }
         }
-        private string connectionSTR = "Data Source=DESKTOP-MN8CCI0;Initial Catalog=QuanLyBanHang;Integrated Security=True";
+        private string connectionSTR = "Data Source=TUYETNHI;Initial Catalog=QuanLyBanHang;Integrated Security=True";
 
         // truy xuất dữ liệu
         public DataTable ExecuteQuery(string query, object[] parameter = null)
