@@ -35,9 +35,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.MaMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,10 +53,6 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaMA,
-            this.TenMon,
-            this.DonGia});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(30, 245);
             this.dataGridView1.Name = "dataGridView1";
@@ -122,29 +115,6 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Tìm kiếm";
             // 
-            // MaMA
-            // 
-            this.MaMA.HeaderText = "Mã món ăn";
-            this.MaMA.MinimumWidth = 6;
-            this.MaMA.Name = "MaMA";
-            this.MaMA.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.MaMA.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MaMA.Width = 200;
-            // 
-            // TenMon
-            // 
-            this.TenMon.HeaderText = "Tên món ăn";
-            this.TenMon.MinimumWidth = 6;
-            this.TenMon.Name = "TenMon";
-            this.TenMon.Width = 270;
-            // 
-            // DonGia
-            // 
-            this.DonGia.HeaderText = "ĐơnGiá";
-            this.DonGia.MinimumWidth = 6;
-            this.DonGia.Name = "DonGia";
-            this.DonGia.Width = 220;
-            // 
             // fmMonAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -175,8 +145,5 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaMA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
     }
 }

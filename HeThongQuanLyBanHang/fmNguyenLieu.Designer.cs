@@ -35,10 +35,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.MaNL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonGiaNL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,11 +42,6 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaNL,
-            this.TenNL,
-            this.DVT,
-            this.DonGiaNL});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(29, 239);
             this.dataGridView1.Name = "dataGridView1";
@@ -123,36 +114,6 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Tìm kiếm";
             // 
-            // MaNL
-            // 
-            this.MaNL.HeaderText = "Mã nguyên liệu";
-            this.MaNL.MinimumWidth = 6;
-            this.MaNL.Name = "MaNL";
-            this.MaNL.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.MaNL.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MaNL.Width = 150;
-            // 
-            // TenNL
-            // 
-            this.TenNL.HeaderText = "Tên nguyên liệu";
-            this.TenNL.MinimumWidth = 6;
-            this.TenNL.Name = "TenNL";
-            this.TenNL.Width = 250;
-            // 
-            // DVT
-            // 
-            this.DVT.HeaderText = "Đơn vị tính";
-            this.DVT.MinimumWidth = 6;
-            this.DVT.Name = "DVT";
-            this.DVT.Width = 140;
-            // 
-            // DonGiaNL
-            // 
-            this.DonGiaNL.HeaderText = "Đơn giá NL";
-            this.DonGiaNL.MinimumWidth = 6;
-            this.DonGiaNL.Name = "DonGiaNL";
-            this.DonGiaNL.Width = 140;
-            // 
             // fmNguyenLieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -183,9 +144,5 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaNL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenNL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DVT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonGiaNL;
     }
 }

@@ -35,12 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaDV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,13 +106,6 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Ma,
-            this.ThoiGian,
-            this.SoLuong,
-            this.ThanhTien,
-            this.MaNL,
-            this.MaDV});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(33, 237);
             this.dataGridView1.Name = "dataGridView1";
@@ -126,50 +113,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(743, 173);
             this.dataGridView1.TabIndex = 19;
-            // 
-            // Ma
-            // 
-            this.Ma.HeaderText = "Mã";
-            this.Ma.MinimumWidth = 6;
-            this.Ma.Name = "Ma";
-            this.Ma.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Ma.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Ma.Width = 110;
-            // 
-            // ThoiGian
-            // 
-            this.ThoiGian.HeaderText = "Thời gian";
-            this.ThoiGian.MinimumWidth = 6;
-            this.ThoiGian.Name = "ThoiGian";
-            this.ThoiGian.Width = 120;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.HeaderText = "Số lượng";
-            this.SoLuong.MinimumWidth = 6;
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.Width = 125;
-            // 
-            // ThanhTien
-            // 
-            this.ThanhTien.HeaderText = "Thành tiền";
-            this.ThanhTien.MinimumWidth = 6;
-            this.ThanhTien.Name = "ThanhTien";
-            this.ThanhTien.Width = 120;
-            // 
-            // MaNL
-            // 
-            this.MaNL.HeaderText = "Mã nguyên liệu";
-            this.MaNL.MinimumWidth = 6;
-            this.MaNL.Name = "MaNL";
-            this.MaNL.Width = 130;
-            // 
-            // MaDV
-            // 
-            this.MaDV.HeaderText = "Mã đơn vị";
-            this.MaDV.MinimumWidth = 6;
-            this.MaDV.Name = "MaDV";
-            this.MaDV.Width = 110;
             // 
             // fmNhapHang
             // 
@@ -200,11 +143,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGian;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaNL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaDV;
     }
 }

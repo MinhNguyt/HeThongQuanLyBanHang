@@ -35,9 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenDVNH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChiNH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,10 +95,6 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaHD,
-            this.TenDVNH,
-            this.DiaChiNH});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(29, 238);
             this.dataGridView1.Name = "dataGridView1";
@@ -120,29 +113,6 @@
             this.label1.Size = new System.Drawing.Size(179, 38);
             this.label1.TabIndex = 19;
             this.label1.Text = "HÓA ĐƠN";
-            // 
-            // MaHD
-            // 
-            this.MaHD.HeaderText = "Mã hóa đơn";
-            this.MaHD.MinimumWidth = 6;
-            this.MaHD.Name = "MaHD";
-            this.MaHD.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.MaHD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MaHD.Width = 200;
-            // 
-            // TenDVNH
-            // 
-            this.TenDVNH.HeaderText = "Tên đơn vị NH";
-            this.TenDVNH.MinimumWidth = 6;
-            this.TenDVNH.Name = "TenDVNH";
-            this.TenDVNH.Width = 270;
-            // 
-            // DiaChiNH
-            // 
-            this.DiaChiNH.HeaderText = "Địa chỉ nhập hàng";
-            this.DiaChiNH.MinimumWidth = 6;
-            this.DiaChiNH.Name = "DiaChiNH";
-            this.DiaChiNH.Width = 220;
             // 
             // fmHoaDon
             // 
@@ -173,8 +143,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenDVNH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChiNH;
     }
 }
