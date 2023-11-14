@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace HeThongQuanLyBanHang
 {
-    public partial class fmHoaDonChiTiet : Form
+    public partial class fmThemHoaDonChiTiet : Form
     {
-        public fmHoaDonChiTiet()
+        public fmThemHoaDonChiTiet()
         {
             InitializeComponent();
-        }
-
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

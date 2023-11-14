@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
+            this.btnIn = new System.Windows.Forms.Button();
+            this.btnXem = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,27 +38,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnXoa
+            // btnIn
             // 
-            this.btnXoa.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(554, 170);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(82, 35);
-            this.btnXoa.TabIndex = 25;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnIn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.Location = new System.Drawing.Point(554, 170);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(82, 35);
+            this.btnIn.TabIndex = 25;
+            this.btnIn.Text = "In";
+            this.btnIn.UseVisualStyleBackColor = false;
             // 
-            // btnSua
+            // btnXem
             // 
-            this.btnSua.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(554, 129);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(82, 35);
-            this.btnSua.TabIndex = 24;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnXem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXem.Location = new System.Drawing.Point(554, 129);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.Size = new System.Drawing.Size(82, 35);
+            this.btnXem.TabIndex = 24;
+            this.btnXem.Text = "Xem";
+            this.btnXem.UseVisualStyleBackColor = false;
             // 
             // btnThem
             // 
@@ -70,6 +70,7 @@
             this.btnThem.TabIndex = 23;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // textBox1
             // 
@@ -119,8 +120,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnIn);
+            this.Controls.Add(this.btnXem);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -136,8 +137,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnIn;
+        private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;

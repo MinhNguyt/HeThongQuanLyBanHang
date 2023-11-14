@@ -72,12 +72,6 @@
     <Compile Include="fmHoaDonChiTiet.Designer.cs">
       <DependentUpon>fmHoaDonChiTiet.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmKhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fmKhachHang.Designer.cs">
-      <DependentUpon>fmKhachHang.cs</DependentUpon>
-    </Compile>
     <Compile Include="fmMonAn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +95,12 @@
     </Compile>
     <Compile Include="fmTaiKhoan.Designer.cs">
       <DependentUpon>fmTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmThemHoaDonChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmThemHoaDonChiTiet.Designer.cs">
+      <DependentUpon>fmThemHoaDonChiTiet.cs</DependentUpon>
     </Compile>
     <Compile Include="fmTrangChu.cs">
       <SubType>Form</SubType>
@@ -128,9 +128,6 @@
     <EmbeddedResource Include="fmHoaDonChiTiet.resx">
       <DependentUpon>fmHoaDonChiTiet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmKhachHang.resx">
-      <DependentUpon>fmKhachHang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fmMonAn.resx">
       <DependentUpon>fmMonAn.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fmTaiKhoan.resx">
       <DependentUpon>fmTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmThemHoaDonChiTiet.resx">
+      <DependentUpon>fmThemHoaDonChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmTrangChu.resx">
       <DependentUpon>fmTrangChu.cs</DependentUpon>

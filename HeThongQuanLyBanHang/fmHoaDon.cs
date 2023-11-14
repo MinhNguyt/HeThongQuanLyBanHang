@@ -16,5 +16,11 @@ namespace HeThongQuanLyBanHang
         {
             InitializeComponent();
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            fmThemHoaDonChiTiet t = new fmThemHoaDonChiTiet();
+            t.Show();
+        }
     }
 }
