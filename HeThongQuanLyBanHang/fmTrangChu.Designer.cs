@@ -32,7 +32,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.bánHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mónĂnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnChiTiếtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhậpHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nguyênLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,7 +63,6 @@
             // 
             this.bánHàngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mónĂnToolStripMenuItem,
-            this.kháchHàngToolStripMenuItem,
             this.hóaĐơnChiTiếtToolStripMenuItem});
             this.bánHàngToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bánHàngToolStripMenuItem.ForeColor = System.Drawing.Color.RoyalBlue;
@@ -81,15 +79,6 @@
             this.mónĂnToolStripMenuItem.Size = new System.Drawing.Size(246, 32);
             this.mónĂnToolStripMenuItem.Text = "Món Ăn";
             this.mónĂnToolStripMenuItem.Click += new System.EventHandler(this.mónĂnToolStripMenuItem_Click);
-            // 
-            // kháchHàngToolStripMenuItem
-            // 
-            this.kháchHàngToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kháchHàngToolStripMenuItem.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(246, 32);
-            this.kháchHàngToolStripMenuItem.Text = "Khách Hàng";
-            this.kháchHàngToolStripMenuItem.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
             // 
             // hóaĐơnChiTiếtToolStripMenuItem
             // 
@@ -195,7 +184,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem bánHàngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mónĂnToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kháchHàngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nhậpHàngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nguyênLiệuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đơnVịNhậpToolStripMenuItem;

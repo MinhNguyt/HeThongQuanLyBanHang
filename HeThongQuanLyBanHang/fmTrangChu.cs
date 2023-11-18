@@ -23,12 +23,6 @@ namespace HeThongQuanLyBanHang
             m.Show();
         }
 
-        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fmKhachHang k = new fmKhachHang();
-            k.Show();
-        }
-
         private void nguyênLiệuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fmNguyenLieu n = new fmNguyenLieu();
@@ -67,7 +61,8 @@ namespace HeThongQuanLyBanHang
 
         private void tàiKhoảnToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            fmDoanhThu dt = new fmDoanhThu();
+            dt.Show();
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
