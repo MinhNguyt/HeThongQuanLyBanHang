@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\BanDAO.cs" />
     <Compile Include="DAO\dataProvider.cs" />
     <Compile Include="DAO\TaikhoanDAO.cs" />
+    <Compile Include="DTO\Ban.cs" />
     <Compile Include="fmDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>

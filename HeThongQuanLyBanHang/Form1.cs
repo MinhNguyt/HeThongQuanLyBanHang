@@ -25,7 +25,9 @@ namespace HeThongQuanLyBanHang
             if (DangNhap(tenTK,matkhau))
             {
                 fmTrangChu t = new fmTrangChu();
-                t.Show();
+                this.Hide();
+                t.ShowDialog();
+                this.Show();
             }
             else
             {
