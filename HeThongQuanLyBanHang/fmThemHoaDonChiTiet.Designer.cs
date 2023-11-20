@@ -30,12 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmThemHoaDonChiTiet));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataBan = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView13 = new System.Windows.Forms.DataGridView();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnThemMon = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView14 = new System.Windows.Forms.DataGridView();
@@ -47,10 +46,9 @@
             this.btnChuyenBan = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataBan = new System.Windows.Forms.FlowLayoutPanel();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).BeginInit();
@@ -66,33 +64,29 @@
             this.panel1.Size = new System.Drawing.Size(310, 391);
             this.panel1.TabIndex = 0;
             // 
+            // dataBan
+            // 
+            this.dataBan.AutoScroll = true;
+            this.dataBan.Location = new System.Drawing.Point(0, 0);
+            this.dataBan.Name = "dataBan";
+            this.dataBan.Size = new System.Drawing.Size(307, 388);
+            this.dataBan.TabIndex = 0;
+            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView13);
+            this.panel2.Controls.Add(this.listView1);
             this.panel2.Controls.Add(this.numericUpDown1);
             this.panel2.Controls.Add(this.btnThemMon);
             this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(343, 100);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(427, 391);
             this.panel2.TabIndex = 1;
             // 
-            // dataGridView13
-            // 
-            this.dataGridView13.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView13.Location = new System.Drawing.Point(12, 76);
-            this.dataGridView13.Name = "dataGridView13";
-            this.dataGridView13.RowHeadersWidth = 51;
-            this.dataGridView13.RowTemplate.Height = 24;
-            this.dataGridView13.Size = new System.Drawing.Size(402, 298);
-            this.dataGridView13.TabIndex = 7;
-            // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(346, 33);
+            this.numericUpDown1.Location = new System.Drawing.Point(346, 24);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(77, 22);
             this.numericUpDown1.TabIndex = 6;
@@ -100,9 +94,9 @@
             // btnThemMon
             // 
             this.btnThemMon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThemMon.Location = new System.Drawing.Point(258, 16);
+            this.btnThemMon.Location = new System.Drawing.Point(258, 15);
             this.btnThemMon.Name = "btnThemMon";
-            this.btnThemMon.Size = new System.Drawing.Size(82, 54);
+            this.btnThemMon.Size = new System.Drawing.Size(82, 39);
             this.btnThemMon.TabIndex = 5;
             this.btnThemMon.Text = "Thêm món";
             this.btnThemMon.UseVisualStyleBackColor = false;
@@ -110,18 +104,10 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(12, 46);
+            this.comboBox2.Location = new System.Drawing.Point(12, 22);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(240, 24);
             this.comboBox2.TabIndex = 4;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(240, 24);
-            this.comboBox1.TabIndex = 3;
             // 
             // panel3
             // 
@@ -235,12 +221,16 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "THÊM HÓA ĐƠN CHI TIẾT";
             // 
-            // dataBan
+            // listView1
             // 
-            this.dataBan.Location = new System.Drawing.Point(0, 0);
-            this.dataBan.Name = "dataBan";
-            this.dataBan.Size = new System.Drawing.Size(307, 388);
-            this.dataBan.TabIndex = 0;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(3, 76);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(420, 312);
+            this.listView1.TabIndex = 8;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
             // 
             // fmThemHoaDonChiTiet
             // 
@@ -255,7 +245,6 @@
             this.Text = "fmThemHoaDonChiTiet";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -276,8 +265,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnThemMon;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView13;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Button btnChuyenBan;
@@ -288,5 +275,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.FlowLayoutPanel dataBan;
+        private System.Windows.Forms.ListView listView1;
     }
 }

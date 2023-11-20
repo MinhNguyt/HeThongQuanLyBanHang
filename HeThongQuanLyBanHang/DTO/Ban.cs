@@ -11,8 +11,8 @@ namespace HeThongQuanLyBanHang.DTO
     {
         public Ban(string maBan,string trangThai)
         {
-            this.maBan = maBan;
-            this.trangThai = trangThai;
+            this.MaBan = maBan;
+            this.TrangThai = trangThai;
         }
         public Ban(DataRow row)
         {
