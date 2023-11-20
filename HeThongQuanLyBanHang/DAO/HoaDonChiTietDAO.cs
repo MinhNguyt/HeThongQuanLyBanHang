@@ -22,7 +22,7 @@ namespace HeThongQuanLyBanHang.DAO
         public List<HoaDonChiTiet> LayDSHoaDonChoTiet(string maHD)
         {
             List<HoaDonChiTiet> DSHoaDonChiTiet = new List<HoaDonChiTiet>();
-            DataTable data = dataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.HOADONCHITIET WHERE MaHD=" + maHD);
+            DataTable data = dataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.HOADONCHITIET WHERE MaHD= '" + maHD+ "'");
             foreach (DataRow item in data.Rows) 
             { 
                 HoaDonChiTiet chitiet = new HoaDonChiTiet(item);

@@ -24,12 +24,14 @@ namespace HeThongQuanLyBanHang.DTO
             this.SoLuong = (int)row["SoLuong"];
             this.MaHD = row["MaHD"].ToString();
         }
+
         private int soLuong;
         public int SoLuong
         {
-            get { return SoLuong; }
-            set { SoLuong = value; }
+            get { return soLuong; }
+            set { soLuong = value; }
         }
+
         private string maMA;
 
         public string MaMA

@@ -30,7 +30,9 @@ namespace HeThongQuanLyBanHang.DTO
             get { return trangThai; }
             set { trangThai = value;}
         }
-        private DateTime? thoiGian
+        private DateTime? thoiGian;
+
+        public DateTime? ThoiGian
         {
             get { return thoiGian; }
             set { thoiGian = value; }

@@ -23,7 +23,7 @@ namespace HeThongQuanLyBanHang.DAO
         // thất bại -1 
         public string TraHoaDonTheoBanChuaThanhToan(string maBan)
         {
-            DataTable data = dataProvider.Instance.ExecuteQuery("SELECT * from dbo.HOADON WHERE MaBan =" + maBan + "AND TrangThai = 0");
+            DataTable data = dataProvider.Instance.ExecuteQuery("SELECT * from HOADON WHERE MaBan = '" + maBan + "' AND TrangThai = 0");
             if (data.Rows.Count >0)
             {
                 HoaDon hoaDon = new HoaDon(data.Rows[0]);
