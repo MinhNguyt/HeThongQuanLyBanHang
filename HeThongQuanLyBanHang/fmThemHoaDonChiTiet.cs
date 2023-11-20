@@ -43,7 +43,17 @@ namespace HeThongQuanLyBanHang
         }
         void LayHoaDon(string MaBan)
         {
-            List<HoaDonChiTiet> DSHoaDonChiTiet = HoaDonChiTietDAO.Instance.LayDSHoaDonChoTiet(HoaDonDAO.Instance.TraHoaDonTheoBanChuaThanhToan(MaBan));
+            listView1.Items.Clear();
+            List<HeThongQuanLyBanHang.DTO.Menu> DSHoaDonChiTiet = MenuDAO.Instance.LayDSMenuTheoBan(MaBan);
+            foreach(HeThongQuanLyBanHang.DTO.Menu item in DSHoaDonChiTiet)
+            {
+                ListViewItem listItem = new ListViewItem(item.TenMA.ToString());
+                listItem.SubItems.Add(item.SoLuong.ToString());
+                listItem.SubItems.Add(item.DonGia.ToString());
+                listItem.SubItems.Add(item.ThanhTien.ToString());
+
+                listView1.Items.Add(listItem);
+            }
         }
         #endregion
 

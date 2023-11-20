@@ -32,6 +32,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataBan = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnThemMon = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -46,7 +51,6 @@
             this.btnChuyenBan = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -84,6 +88,42 @@
             this.panel2.Size = new System.Drawing.Size(427, 391);
             this.panel2.TabIndex = 1;
             // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(4, 76);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(420, 312);
+            this.listView1.TabIndex = 8;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên Món";
+            this.columnHeader1.Width = 157;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số Lượng";
+            this.columnHeader2.Width = 70;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn Giá";
+            this.columnHeader3.Width = 99;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành Tiền";
+            this.columnHeader4.Width = 90;
+            // 
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(346, 24);
@@ -93,10 +133,11 @@
             // 
             // btnThemMon
             // 
+            this.btnThemMon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThemMon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThemMon.Location = new System.Drawing.Point(258, 15);
+            this.btnThemMon.Location = new System.Drawing.Point(258, 11);
             this.btnThemMon.Name = "btnThemMon";
-            this.btnThemMon.Size = new System.Drawing.Size(82, 39);
+            this.btnThemMon.Size = new System.Drawing.Size(82, 44);
             this.btnThemMon.TabIndex = 5;
             this.btnThemMon.Text = "Thêm món";
             this.btnThemMon.UseVisualStyleBackColor = false;
@@ -221,17 +262,6 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "THÊM HÓA ĐƠN CHI TIẾT";
             // 
-            // listView1
-            // 
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 76);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(420, 312);
-            this.listView1.TabIndex = 8;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.List;
-            // 
             // fmThemHoaDonChiTiet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -276,5 +306,9 @@
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.FlowLayoutPanel dataBan;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
