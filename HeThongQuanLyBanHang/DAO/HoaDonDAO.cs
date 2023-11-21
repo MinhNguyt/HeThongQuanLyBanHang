@@ -31,5 +31,9 @@ namespace HeThongQuanLyBanHang.DAO
             }
             return ("").ToString(); 
         }
+        public void ThemHoaDon(string maBan) 
+        {
+            dataProvider.Instance.ExecuteNonQuery("exec USP_ThemHoaDon @MaBan",new object[]{maBan});
+        }
     }
 }

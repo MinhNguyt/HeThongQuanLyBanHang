@@ -30,5 +30,9 @@ namespace HeThongQuanLyBanHang.DAO
             }
             return DSHoaDonChiTiet;
         }
+        public void ThemHoaDonChiTiet(string maHD, string maMA,int soLuong)
+        {
+            dataProvider.Instance.ExecuteNonQuery("exec USP_ThemHoaDonChiTiet @MaHD , @MaMA , @SoLuong ", new object[] { maHD, maMA, soLuong });
+        }
     }
 }

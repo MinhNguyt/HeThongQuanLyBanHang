@@ -42,7 +42,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridView14 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,7 +55,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -141,6 +140,7 @@
             this.btnThemMon.TabIndex = 5;
             this.btnThemMon.Text = "Thêm món";
             this.btnThemMon.UseVisualStyleBackColor = false;
+            this.btnThemMon.Click += new System.EventHandler(this.btnThemMon_Click);
             // 
             // comboBox2
             // 
@@ -159,7 +159,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.dataGridView14);
+            this.panel4.Controls.Add(this.textBox1);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.numericUpDown2);
             this.panel4.Controls.Add(this.label2);
@@ -172,16 +172,16 @@
             this.panel4.Size = new System.Drawing.Size(117, 388);
             this.panel4.TabIndex = 2;
             // 
-            // dataGridView14
+            // textBox1
             // 
-            this.dataGridView14.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView14.Location = new System.Drawing.Point(3, 344);
-            this.dataGridView14.Name = "dataGridView14";
-            this.dataGridView14.RowHeadersWidth = 51;
-            this.dataGridView14.RowTemplate.Height = 24;
-            this.dataGridView14.Size = new System.Drawing.Size(111, 30);
-            this.dataGridView14.TabIndex = 9;
+            this.textBox1.Location = new System.Drawing.Point(7, 333);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(100, 30);
+            this.textBox1.TabIndex = 9;
+            this.textBox1.Text = "0";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -250,6 +250,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -261,6 +262,7 @@
             this.label1.Size = new System.Drawing.Size(439, 38);
             this.label1.TabIndex = 20;
             this.label1.Text = "THÊM HÓA ĐƠN CHI TIẾT";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // fmThemHoaDonChiTiet
             // 
@@ -273,12 +275,12 @@
             this.Controls.Add(this.panel1);
             this.Name = "fmThemHoaDonChiTiet";
             this.Text = "fmThemHoaDonChiTiet";
+            this.Load += new System.EventHandler(this.fmThemHoaDonChiTiet_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -299,7 +301,6 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Button btnChuyenBan;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView14;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label2;
@@ -310,5 +311,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
