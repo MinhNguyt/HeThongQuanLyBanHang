@@ -94,6 +94,12 @@
     <Compile Include="fmNhapHang.Designer.cs">
       <DependentUpon>fmNhapHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="fmSuaNguyenLieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmSuaNguyenLieuNhap.Designer.cs">
+      <DependentUpon>fmSuaNguyenLieuNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fmNhapHang.resx">
       <DependentUpon>fmNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmSuaNguyenLieuNhap.resx">
+      <DependentUpon>fmSuaNguyenLieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmTaiKhoan.resx">
       <DependentUpon>fmTaiKhoan.cs</DependentUpon>

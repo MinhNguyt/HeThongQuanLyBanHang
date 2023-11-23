@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HeThongQuanLyBanHang.DAO;
+using HeThongQuanLyBanHang.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +17,22 @@ namespace HeThongQuanLyBanHang
         public fmMonAn()
         {
             InitializeComponent();
+            TaiMonAn();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void TaiMonAn()
         {
-
+            dataMonAn.DataSource = MonAnDAO.Instance.LayDSMonAn();
         }
+        #region Methods
+        List<MonAn> TimMonAntheoTen(string tenMon)
+        {
+            List<MonAn> DSMonAn = MonAnDAO.Instance.TImMonAntheoTen(tenMon);
+            return DSMonAn;
+        }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            dataMonAn.DataSource=TimMonAntheoTen(tbMon.Text);
+        }
+        #endregion
     }
 }

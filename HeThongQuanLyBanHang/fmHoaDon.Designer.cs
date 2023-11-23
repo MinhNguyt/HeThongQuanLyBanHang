@@ -59,6 +59,7 @@
             // 
             // dtgHoaDon
             // 
+            this.dtgHoaDon.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dtgHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgHoaDon.Location = new System.Drawing.Point(164, 126);
             this.dtgHoaDon.Name = "dtgHoaDon";

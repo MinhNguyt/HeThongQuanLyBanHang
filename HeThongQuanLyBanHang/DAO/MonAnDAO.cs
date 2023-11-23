@@ -30,6 +30,20 @@ namespace HeThongQuanLyBanHang.DAO
             }
             return DSMonAn;
         }
+
+        public List<MonAn> TImMonAntheoTen(string TenMon)
+        {
+            List<MonAn> DSMonAn = new List<MonAn>();
+
+            string query = "Select * from MONAN where TenMon like N'%"+ TenMon+"%'";
+            DataTable data = dataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in data.Rows)
+            {
+                MonAn ma = new MonAn(item);
+                DSMonAn.Add(ma);
+            }
+            return DSMonAn;
+        }
         
 
     }
