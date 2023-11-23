@@ -37,7 +37,7 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericFood = new System.Windows.Forms.NumericUpDown();
             this.btnThemMon = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -48,12 +48,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.btnChuyenBan = new System.Windows.Forms.Button();
+            this.btnThanhToan = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericFood)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,7 +78,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.listView1);
-            this.panel2.Controls.Add(this.numericUpDown1);
+            this.panel2.Controls.Add(this.numericFood);
             this.panel2.Controls.Add(this.btnThemMon);
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.panel3);
@@ -123,12 +123,17 @@
             this.columnHeader4.Text = "Thành Tiền";
             this.columnHeader4.Width = 90;
             // 
-            // numericUpDown1
+            // numericFood
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(346, 24);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(77, 22);
-            this.numericUpDown1.TabIndex = 6;
+            this.numericFood.Location = new System.Drawing.Point(346, 24);
+            this.numericFood.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.numericFood.Name = "numericFood";
+            this.numericFood.Size = new System.Drawing.Size(77, 22);
+            this.numericFood.TabIndex = 6;
             // 
             // btnThemMon
             // 
@@ -165,7 +170,7 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.btnOK);
             this.panel4.Controls.Add(this.comboBox3);
-            this.panel4.Controls.Add(this.btnChuyenBan);
+            this.panel4.Controls.Add(this.btnThanhToan);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Location = new System.Drawing.Point(779, 100);
             this.panel4.Name = "panel4";
@@ -231,15 +236,16 @@
             this.comboBox3.Size = new System.Drawing.Size(111, 24);
             this.comboBox3.TabIndex = 4;
             // 
-            // btnChuyenBan
+            // btnThanhToan
             // 
-            this.btnChuyenBan.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnChuyenBan.Location = new System.Drawing.Point(3, 76);
-            this.btnChuyenBan.Name = "btnChuyenBan";
-            this.btnChuyenBan.Size = new System.Drawing.Size(111, 58);
-            this.btnChuyenBan.TabIndex = 1;
-            this.btnChuyenBan.Text = "Chuyển bàn";
-            this.btnChuyenBan.UseVisualStyleBackColor = false;
+            this.btnThanhToan.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnThanhToan.Location = new System.Drawing.Point(3, 76);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(111, 58);
+            this.btnThanhToan.TabIndex = 1;
+            this.btnThanhToan.Text = "Thanh Toán";
+            this.btnThanhToan.UseVisualStyleBackColor = false;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // pictureBox1
             // 
@@ -278,7 +284,7 @@
             this.Load += new System.EventHandler(this.fmThemHoaDonChiTiet_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericFood)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
@@ -297,9 +303,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnThemMon;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericFood;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button btnChuyenBan;
+        private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numericUpDown2;

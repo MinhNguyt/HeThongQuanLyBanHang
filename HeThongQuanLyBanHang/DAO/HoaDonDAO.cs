@@ -29,11 +29,27 @@ namespace HeThongQuanLyBanHang.DAO
                 HoaDon hoaDon = new HoaDon(data.Rows[0]);
                 return hoaDon.MaHD;
             }
-            return ("").ToString(); 
+            return (-1).ToString(); 
+        }
+        public void TraHoaDon(string maHD)
+        {
+            string query = "exec USP_SuaHoaDon '" + maHD+"'";
+            dataProvider.Instance.ExecuteNonQuery(query);
         }
         public void ThemHoaDon(string maBan) 
         {
             dataProvider.Instance.ExecuteNonQuery("exec USP_ThemHoaDon @MaBan",new object[]{maBan});
+        }
+        public string LayHoaDonLonNhat()
+        {
+            try
+            {
+                return dataProvider.Instance.ExecuteScalar("select max(MaHD) from HOADON").ToString();
+            }
+            catch
+            {
+                return "HD0001";
+            }
         }
     }
 }

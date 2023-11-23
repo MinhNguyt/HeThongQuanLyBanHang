@@ -73,11 +73,41 @@ namespace HeThongQuanLyBanHang
         }
         private void btnThemMon_Click(object sender, EventArgs e)
         {
-
+            Ban ban = listView1.Tag as Ban;
+            string maHD = HoaDonDAO.Instance.TraHoaDonTheoBanChuaThanhToan(ban.MaBan);
+            string maMA = (comboBox2.SelectedItem as MonAn).MaMon;
+            int soLuong = (int)numericFood.Value;
+            if (maHD == "-1")
+            {
+                HoaDonDAO.Instance.ThemHoaDon(ban.MaBan);
+                HoaDonChiTietDAO.Instance.ThemHoaDonChiTiet(HoaDonDAO.Instance.LayHoaDonLonNhat(),maMA,soLuong);
+            }
+            else
+            {
+                HoaDonChiTietDAO.Instance.ThemHoaDonChiTiet(maHD, maMA, soLuong);
+            }
+            LayHoaDon(ban.MaBan);
         }
-
+        
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            /*
+            Ban ban = listView1.Tag as Ban;
+            string maHD = HoaDonDAO.Instance.TraHoaDonTheoBanChuaThanhToan(ban.MaBan);
+            if (maHD != "-1")
+            {
+                if (MessageBox.Show("Bạn muốn thanh toán cho " + ban.MaBan, "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK) ;
+                {
+                    HoaDonDAO.Instance.TraHoaDon(maHD);
+                    LayHoaDon(ban.MaBan);
+                }
+            }
+            */
+        }
+        
         #endregion
 
+        #region
         private void fmThemHoaDonChiTiet_Load(object sender, EventArgs e)
         {
 
@@ -92,6 +122,8 @@ namespace HeThongQuanLyBanHang
         {
 
         }
+        #endregion
+
     }
 
 }
