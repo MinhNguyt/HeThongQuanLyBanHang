@@ -25,6 +25,7 @@ namespace HeThongQuanLyBanHang
         }
         void TaiBan()
         {
+            dataBan.Controls.Clear();
             List<Ban> dsBan = BanDAO.Instance.TaiDSBan();
             foreach (Ban item in dsBan)
             {
@@ -61,6 +62,7 @@ namespace HeThongQuanLyBanHang
             CultureInfo culture = new CultureInfo("vi-VN");
             textBox1.Text = TongTien.ToString("c", culture);
 
+            TaiBan();
         }
         #endregion
 
@@ -91,7 +93,7 @@ namespace HeThongQuanLyBanHang
         
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-            /*
+            
             Ban ban = listView1.Tag as Ban;
             string maHD = HoaDonDAO.Instance.TraHoaDonTheoBanChuaThanhToan(ban.MaBan);
             if (maHD != "-1")
@@ -100,11 +102,20 @@ namespace HeThongQuanLyBanHang
                 {
                     HoaDonDAO.Instance.TraHoaDon(maHD);
                     LayHoaDon(ban.MaBan);
+
+                    TaiBan();
                 }
             }
-            */
+            
         }
-        
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            Ban ban = listView1.Tag as Ban;
+            if (MessageBox.Show("Bạn muốn in hóa đơn cho " + ban.MaBan, "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            { }
+
+        }
+
         #endregion
 
         #region
@@ -124,6 +135,7 @@ namespace HeThongQuanLyBanHang
         }
         #endregion
 
+        
     }
 
 }

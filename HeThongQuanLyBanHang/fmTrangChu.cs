@@ -43,8 +43,8 @@ namespace HeThongQuanLyBanHang
 
         private void hóaĐơnChiTiếtToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            fmHoaDonChiTiet ct = new fmHoaDonChiTiet();
-            ct.Show();
+            fmThemHoaDonChiTiet th = new fmThemHoaDonChiTiet();
+            th.Show();
         }
 
         private void bánHàngToolStripMenuItem_Click(object sender, EventArgs e)

@@ -51,5 +51,6 @@ namespace HeThongQuanLyBanHang.DAO
                 return "HD0001";
             }
         }
+       
     }
 }

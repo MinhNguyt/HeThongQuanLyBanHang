@@ -42,12 +42,9 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnIn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnOK = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,7 +52,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericFood)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,12 +160,9 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.btnIn);
             this.panel4.Controls.Add(this.textBox1);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.numericUpDown2);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.btnOK);
-            this.panel4.Controls.Add(this.comboBox3);
             this.panel4.Controls.Add(this.btnThanhToan);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Location = new System.Drawing.Point(779, 100);
@@ -177,9 +170,20 @@
             this.panel4.Size = new System.Drawing.Size(117, 388);
             this.panel4.TabIndex = 2;
             // 
+            // btnIn
+            // 
+            this.btnIn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnIn.Location = new System.Drawing.Point(3, 317);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(110, 58);
+            this.btnIn.TabIndex = 10;
+            this.btnIn.Text = "In ";
+            this.btnIn.UseVisualStyleBackColor = false;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(7, 333);
+            this.textBox1.Location = new System.Drawing.Point(8, 217);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -193,53 +197,16 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label3.Location = new System.Drawing.Point(18, 310);
+            this.label3.Location = new System.Drawing.Point(15, 194);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Tổng tiền";
             // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 261);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(111, 22);
-            this.numericUpDown2.TabIndex = 7;
-            this.numericUpDown2.ThousandsSeparator = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label2.Location = new System.Drawing.Point(18, 235);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Giảm giá";
-            // 
-            // btnOK
-            // 
-            this.btnOK.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnOK.Location = new System.Drawing.Point(3, 170);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(111, 58);
-            this.btnOK.TabIndex = 5;
-            this.btnOK.Text = "OK";
-            this.btnOK.UseVisualStyleBackColor = false;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(3, 140);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(111, 24);
-            this.comboBox3.TabIndex = 4;
-            // 
             // btnThanhToan
             // 
             this.btnThanhToan.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThanhToan.Location = new System.Drawing.Point(3, 76);
+            this.btnThanhToan.Location = new System.Drawing.Point(3, 253);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(111, 58);
             this.btnThanhToan.TabIndex = 1;
@@ -287,7 +254,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericFood)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -304,13 +270,9 @@
         private System.Windows.Forms.Button btnThemMon;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.NumericUpDown numericFood;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.FlowLayoutPanel dataBan;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -318,5 +280,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnIn;
     }
 }

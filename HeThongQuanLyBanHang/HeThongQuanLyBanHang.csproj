@@ -76,12 +76,6 @@
     <Compile Include="fmHoaDon.Designer.cs">
       <DependentUpon>fmHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmHoaDonChiTiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fmHoaDonChiTiet.Designer.cs">
-      <DependentUpon>fmHoaDonChiTiet.cs</DependentUpon>
-    </Compile>
     <Compile Include="fmMonAn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,9 +128,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fmHoaDon.resx">
       <DependentUpon>fmHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fmHoaDonChiTiet.resx">
-      <DependentUpon>fmHoaDonChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmMonAn.resx">
       <DependentUpon>fmMonAn.cs</DependentUpon>

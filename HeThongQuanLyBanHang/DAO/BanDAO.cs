@@ -22,7 +22,7 @@ namespace HeThongQuanLyBanHang.DAO
         public static int BanHeight = 65;
 
         private BanDAO() { }
-
+        
         public List<Ban> TaiDSBan ()
         {
             List<Ban> DSBan = new List<Ban>();

@@ -40,18 +40,18 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 153);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 128);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(743, 265);
+            this.dataGridView1.Size = new System.Drawing.Size(718, 265);
             this.dataGridView1.TabIndex = 24;
             // 
             // btnThongKe
             // 
             this.btnThongKe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.Location = new System.Drawing.Point(602, 95);
+            this.btnThongKe.Location = new System.Drawing.Point(602, 87);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(136, 35);
             this.btnThongKe.TabIndex = 23;
@@ -60,7 +60,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(45, 100);
+            this.dateTimePicker1.Location = new System.Drawing.Point(43, 92);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(307, 22);
             this.dateTimePicker1.TabIndex = 22;
