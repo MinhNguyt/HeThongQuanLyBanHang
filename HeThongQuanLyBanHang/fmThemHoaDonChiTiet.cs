@@ -93,20 +93,23 @@ namespace HeThongQuanLyBanHang
         
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-            
+
             Ban ban = listView1.Tag as Ban;
             string maHD = HoaDonDAO.Instance.TraHoaDonTheoBanChuaThanhToan(ban.MaBan);
+            string TextBox = textBox1.Text; // Giả sử textBox1 là tên của TextBox của bạn
+            TextBox = TextBox.Replace(".", "").Replace(",", "").Replace(" ₫", "");
+            decimal tongtien = decimal.Parse(TextBox);
             if (maHD != "-1")
             {
                 if (MessageBox.Show("Bạn muốn thanh toán cho " + ban.MaBan, "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK) ;
                 {
-                    HoaDonDAO.Instance.TraHoaDon(maHD);
+                    HoaDonDAO.Instance.TraHoaDon(maHD, tongtien);
                     LayHoaDon(ban.MaBan);
 
                     TaiBan();
                 }
             }
-            
+
         }
         private void btnIn_Click(object sender, EventArgs e)
         {

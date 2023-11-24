@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HeThongQuanLyBanHang.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,25 @@ namespace HeThongQuanLyBanHang
         public fmDoanhThu()
         {
             InitializeComponent();
+            TaiDSHoaDonTheoNgay(dateTimePicker1.Value);
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+        #region methods
+        void TaiDSHoaDonTheoNgay(DateTime thoigian)
+        {
+            dataGridView1.DataSource = HoaDonDAO.Instance.LayDSHoaDonTheoNgay(thoigian);
+        }
+        #endregion
+        #region events
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            TaiDSHoaDonTheoNgay(dateTimePicker1.Value);
+
+        }
+        #endregion
     }
 }
