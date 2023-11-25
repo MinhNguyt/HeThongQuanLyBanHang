@@ -45,6 +45,17 @@ namespace HeThongQuanLyBanHang.DAO
             return DSMonAn;
         }
         
-
+        public bool ThemMon(string tenMon, decimal donGia)
+        {
+            string query = string.Format("Insert into MONAN(MaMA,TenMon,DonGia)values(dbo.fmaMon(),N'{0}',{1} )", tenMon, donGia);
+            int result = dataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+        public bool SuaMon(string maMon,string tenMon, decimal donGia)
+        {
+            string query = string.Format("update MONAN set TenMon =N'{0}', DonGia = {1} where MaMA = '{2}'", tenMon, donGia, maMon);
+            int result = dataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
     }
 }

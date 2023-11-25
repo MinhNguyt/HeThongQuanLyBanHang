@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnThem = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             this.tbMon = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataMonAn = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btThemMon = new System.Windows.Forms.Button();
+            this.btSuaMon = new System.Windows.Forms.Button();
+            this.btXoaMon = new System.Windows.Forms.Button();
+            this.txtTenMon = new System.Windows.Forms.TextBox();
+            this.numericDonGia = new System.Windows.Forms.NumericUpDown();
+            this.txtMaMon = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataMonAn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericDonGia)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,17 +57,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "MÓN ĂN";
             // 
-            // btnThem
+            // btnTimKiem
             // 
-            this.btnThem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(327, 109);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(101, 35);
-            this.btnThem.TabIndex = 15;
-            this.btnThem.Text = "Tìm Kiếm";
-            this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.btnTimKiem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.Location = new System.Drawing.Point(327, 109);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(101, 35);
+            this.btnTimKiem.TabIndex = 15;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // tbMon
             // 
@@ -91,6 +91,7 @@
             // 
             // dataMonAn
             // 
+            this.dataMonAn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataMonAn.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataMonAn.Location = new System.Drawing.Point(25, 162);
@@ -133,63 +134,70 @@
             this.label5.TabIndex = 19;
             this.label5.Text = "Đơn Giá:";
             // 
-            // button1
+            // btThemMon
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(522, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 35);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btThemMon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btThemMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThemMon.Location = new System.Drawing.Point(522, 112);
+            this.btThemMon.Name = "btThemMon";
+            this.btThemMon.Size = new System.Drawing.Size(76, 35);
+            this.btThemMon.TabIndex = 20;
+            this.btThemMon.Text = "Thêm";
+            this.btThemMon.UseVisualStyleBackColor = false;
+            this.btThemMon.Click += new System.EventHandler(this.btThemMon_Click);
             // 
-            // button2
+            // btSuaMon
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(614, 112);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 35);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btSuaMon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btSuaMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSuaMon.Location = new System.Drawing.Point(614, 112);
+            this.btSuaMon.Name = "btSuaMon";
+            this.btSuaMon.Size = new System.Drawing.Size(71, 35);
+            this.btSuaMon.TabIndex = 21;
+            this.btSuaMon.Text = "Sửa";
+            this.btSuaMon.UseVisualStyleBackColor = false;
+            this.btSuaMon.Click += new System.EventHandler(this.btSuaMon_Click);
             // 
-            // button3
+            // btXoaMon
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(700, 112);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 35);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btXoaMon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btXoaMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoaMon.Location = new System.Drawing.Point(700, 112);
+            this.btXoaMon.Name = "btXoaMon";
+            this.btXoaMon.Size = new System.Drawing.Size(75, 35);
+            this.btXoaMon.TabIndex = 22;
+            this.btXoaMon.Text = "Xóa";
+            this.btXoaMon.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtTenMon
             // 
-            this.textBox1.Location = new System.Drawing.Point(549, 257);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 25);
-            this.textBox1.TabIndex = 23;
+            this.txtTenMon.Location = new System.Drawing.Point(549, 257);
+            this.txtTenMon.Multiline = true;
+            this.txtTenMon.Name = "txtTenMon";
+            this.txtTenMon.Size = new System.Drawing.Size(226, 25);
+            this.txtTenMon.TabIndex = 23;
             // 
-            // numericUpDown1
+            // numericDonGia
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(549, 320);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(226, 22);
-            this.numericUpDown1.TabIndex = 24;
+            this.numericDonGia.Location = new System.Drawing.Point(549, 320);
+            this.numericDonGia.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
+            this.numericDonGia.Name = "numericDonGia";
+            this.numericDonGia.Size = new System.Drawing.Size(226, 22);
+            this.numericDonGia.TabIndex = 24;
             // 
-            // textBox2
+            // txtMaMon
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox2.Location = new System.Drawing.Point(549, 193);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(226, 25);
-            this.textBox2.TabIndex = 25;
+            this.txtMaMon.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtMaMon.Location = new System.Drawing.Point(549, 193);
+            this.txtMaMon.Multiline = true;
+            this.txtMaMon.Name = "txtMaMon";
+            this.txtMaMon.ReadOnly = true;
+            this.txtMaMon.Size = new System.Drawing.Size(226, 25);
+            this.txtMaMon.TabIndex = 25;
             // 
             // fmMonAn
             // 
@@ -197,24 +205,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtMaMon);
+            this.Controls.Add(this.numericDonGia);
+            this.Controls.Add(this.txtTenMon);
+            this.Controls.Add(this.btXoaMon);
+            this.Controls.Add(this.btSuaMon);
+            this.Controls.Add(this.btThemMon);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataMonAn);
-            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.tbMon);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "fmMonAn";
             this.Text = "fmMonAn";
             ((System.ComponentModel.ISupportInitialize)(this.dataMonAn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericDonGia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,18 +231,18 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox tbMon;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataMonAn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btThemMon;
+        private System.Windows.Forms.Button btSuaMon;
+        private System.Windows.Forms.Button btXoaMon;
+        private System.Windows.Forms.TextBox txtTenMon;
+        private System.Windows.Forms.NumericUpDown numericDonGia;
+        private System.Windows.Forms.TextBox txtMaMon;
     }
 }
