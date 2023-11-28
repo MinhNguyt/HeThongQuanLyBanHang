@@ -1,5 +1,7 @@
-﻿using System;
+﻿using HeThongQuanLyBanHang.DTO;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,5 +17,17 @@ namespace HeThongQuanLyBanHang.DAO
             private set { DonViNhapDAO.instance = value; }
         }
         private DonViNhapDAO() { }
+        public List<HeThongQuanLyBanHang.DTO.MonAn> LayDSMonAn()
+        {
+            List<HeThongQuanLyBanHang.DTO.MonAn> DSMonAn = new List<HeThongQuanLyBanHang.DTO.MonAn>();
+            string query = "Select * from MONAN where Trangthai = 0";
+            DataTable data = dataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in data.Rows)
+            {
+                MonAn ma = new MonAn(item);
+                DSMonAn.Add(ma);
+            }
+            return DSMonAn;
+        }
     }
 }
