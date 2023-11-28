@@ -168,6 +168,7 @@
             this.btXoaMon.TabIndex = 22;
             this.btXoaMon.Text = "Xóa";
             this.btXoaMon.UseVisualStyleBackColor = false;
+            this.btXoaMon.Click += new System.EventHandler(this.btXoaMon_Click);
             // 
             // txtTenMon
             // 

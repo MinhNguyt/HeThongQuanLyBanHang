@@ -21,7 +21,7 @@ namespace HeThongQuanLyBanHang.DAO
         public List<HeThongQuanLyBanHang.DTO.NguyenLieu> LayDSNguyenlieu()
         {
             List<HeThongQuanLyBanHang.DTO.NguyenLieu> DSnguyenlieu = new List<HeThongQuanLyBanHang.DTO.NguyenLieu>();
-            string query = "Select * from NGUYENLIEU";
+            string query = "Select * from NGUYENLIEU where Trangthai = 0";
             DataTable data = dataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in data.Rows)
             {
@@ -35,7 +35,7 @@ namespace HeThongQuanLyBanHang.DAO
         {
             List<NguyenLieu> DSnguyenlieu = new List<NguyenLieu>();
 
-            string query = "Select * from NGUYENLIEU where TenNL like N'%" + TenNL + "%'";
+            string query = "Select * from NGUYENLIEU where TenNL like N'%" + TenNL + "%' and TrangThai =0";
             DataTable data = dataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in data.Rows)
             {
@@ -54,6 +54,12 @@ namespace HeThongQuanLyBanHang.DAO
         public bool SuaNguyenLieu(string maNL, string tenNL,string dvt, decimal donGia)
         {
             string query = string.Format("update NGUYENLIEU set TenNL =N'{0}',DVT= N'{1}', DonGiaNL = {2} where MaNL = '{3}'", tenNL,dvt, donGia, maNL);
+            int result = dataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+        public bool XoaNguyenLieu(string maNL)
+        {
+            string query = string.Format("update NGUYENLIEU set TrangThai = 9 where MaNL = '{0}'", maNL);
             int result = dataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

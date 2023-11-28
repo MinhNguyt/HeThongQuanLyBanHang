@@ -99,6 +99,7 @@
             this.Xoa.TabIndex = 35;
             this.Xoa.Text = "Xóa";
             this.Xoa.UseVisualStyleBackColor = false;
+            this.Xoa.Click += new System.EventHandler(this.Xoa_Click);
             // 
             // Sua
             // 

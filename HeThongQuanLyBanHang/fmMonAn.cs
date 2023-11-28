@@ -78,5 +78,20 @@ namespace HeThongQuanLyBanHang
                 MessageBox.Show("Có lỗi khi sửa món!!!");
             }
         }
+
+        private void btXoaMon_Click(object sender, EventArgs e)
+        {
+            string maMon = txtMaMon.Text;
+
+            if (MonAnDAO.Instance.XoaMon(maMon))
+            {
+                MessageBox.Show("Xóa món thành công.");
+                TaiMonAn();
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi khi xóa món!!!");
+            }
+        }
     }
 }

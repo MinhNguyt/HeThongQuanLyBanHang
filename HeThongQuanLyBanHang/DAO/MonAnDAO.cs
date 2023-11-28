@@ -21,7 +21,7 @@ namespace HeThongQuanLyBanHang.DAO
         public List<HeThongQuanLyBanHang.DTO.MonAn> LayDSMonAn()
         {
             List<HeThongQuanLyBanHang.DTO.MonAn> DSMonAn = new List<HeThongQuanLyBanHang.DTO.MonAn>();
-            string query = "Select * from MONAN";
+            string query = "Select * from MONAN where Trangthai = 0";
             DataTable data = dataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in data.Rows) 
             {
@@ -35,7 +35,7 @@ namespace HeThongQuanLyBanHang.DAO
         {
             List<MonAn> DSMonAn = new List<MonAn>();
 
-            string query = "Select * from MONAN where TenMon like N'%"+ TenMon+"%'";
+            string query = "Select * from MONAN where TenMon like N'%"+ TenMon+ "%' and Trangthai = 0";
             DataTable data = dataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in data.Rows)
             {
@@ -54,6 +54,12 @@ namespace HeThongQuanLyBanHang.DAO
         public bool SuaMon(string maMon,string tenMon, decimal donGia)
         {
             string query = string.Format("update MONAN set TenMon =N'{0}', DonGia = {1} where MaMA = '{2}'", tenMon, donGia, maMon);
+            int result = dataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+        public bool XoaMon(string maMon)
+        {
+            string query = string.Format("update MONAN set TrangThai = 9 where MaMA = '{2}'", maMon);
             int result = dataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

@@ -58,6 +58,7 @@
             this.btnThongKe.TabIndex = 23;
             this.btnThongKe.Text = "Thống kê";
             this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click_1);
             // 
             // dateTimePicker1
             // 

@@ -80,5 +80,20 @@ namespace HeThongQuanLyBanHang
                 MessageBox.Show("Có lỗi khi sửa nguyên liệu!!!");
             }
         }
+
+        private void Xoa_Click(object sender, EventArgs e)
+        {
+            string maNL = txtMaNL.Text;
+
+            if (NguyenLieuDAO.Instance.XoaNguyenLieu(maNL))
+            {
+                MessageBox.Show("Xóa nguyên liệu thành công.");
+                TaiNguyenLieu();
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi khi xóa nguyên liệu!!!");
+            }
+        }
     }
 }
