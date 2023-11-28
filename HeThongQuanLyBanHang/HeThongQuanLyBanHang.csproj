@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DAO\BanDAO.cs" />
     <Compile Include="DAO\dataProvider.cs" />
+    <Compile Include="DAO\DonViNhapDAO.cs" />
     <Compile Include="DAO\HoaDonChiTietDAO.cs" />
     <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\MenuDAO.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="DAO\NguyenLieuDAO.cs" />
     <Compile Include="DAO\TaikhoanDAO.cs" />
     <Compile Include="DTO\Ban.cs" />
+    <Compile Include="DTO\DonViNhap.cs" />
     <Compile Include="DTO\HoaDon.cs" />
     <Compile Include="DTO\HoaDonChiTiet.cs" />
     <Compile Include="DTO\Menu.cs" />
