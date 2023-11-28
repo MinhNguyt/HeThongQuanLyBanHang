@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HeThongQuanLyBanHang.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -22,6 +23,19 @@ namespace HeThongQuanLyBanHang.DAO
             string query = "USP_DANGNHAP @tenTk , @matkhau";
             DataTable result = dataProvider.Instance.ExecuteQuery(query, new object[] { tenTK, matkhau });
             return result.Rows.Count > 0;
+        }
+        public List<TaiKhoan> XuatDuLieu()
+        {
+            List<TaiKhoan> DSTaiKhoan = new List<TaiKhoan>();
+
+            string query = "Select * from TAIKHOAN where TenTK ='TK01'";
+            DataTable data = dataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in data.Rows)
+            {
+                TaiKhoan tk = new TaiKhoan(item);
+                DSTaiKhoan.Add(tk);
+            }
+            return DSTaiKhoan;
         }
     }
 }

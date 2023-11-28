@@ -40,7 +40,7 @@ namespace HeThongQuanLyBanHang
         {
             return TaikhoanDAO.Instance.DangNhap(tenTK, matkhau);
         }
-
+        
 
         private void btnThoat_Click(object sender, EventArgs e)
         {

@@ -59,7 +59,7 @@ namespace HeThongQuanLyBanHang.DAO
         }
         public bool XoaMon(string maMon)
         {
-            string query = string.Format("update MONAN set TrangThai = 9 where MaMA = '{2}'", maMon);
+            string query = string.Format("update MONAN set TrangThai = 9 where MaMA = '{0}'", maMon);
             int result = dataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

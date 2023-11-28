@@ -39,10 +39,9 @@
             this.numericFood = new System.Windows.Forms.NumericUpDown();
             this.btnThemMon = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.dataMonAn = new System.Windows.Forms.DataGridView();
+            this.dataDonViNhap = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericFood)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataMonAn)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -96,8 +95,8 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Tên Món";
-            this.columnHeader1.Width = 157;
+            this.columnHeader1.Text = "Tên Nguyên Liệu";
+            this.columnHeader1.Width = 160;
             // 
             // columnHeader2
             // 
@@ -145,23 +144,21 @@
             this.comboBox2.Size = new System.Drawing.Size(240, 24);
             this.comboBox2.TabIndex = 4;
             // 
-            // dataMonAn
+            // dataDonViNhap
             // 
-            this.dataMonAn.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataMonAn.Location = new System.Drawing.Point(10, 164);
-            this.dataMonAn.Name = "dataMonAn";
-            this.dataMonAn.RowHeadersWidth = 51;
-            this.dataMonAn.RowTemplate.Height = 24;
-            this.dataMonAn.Size = new System.Drawing.Size(311, 262);
-            this.dataMonAn.TabIndex = 30;
+            this.dataDonViNhap.AutoSize = true;
+            this.dataDonViNhap.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.dataDonViNhap.Location = new System.Drawing.Point(18, 158);
+            this.dataDonViNhap.Name = "dataDonViNhap";
+            this.dataDonViNhap.Size = new System.Drawing.Size(305, 268);
+            this.dataDonViNhap.TabIndex = 31;
             // 
             // fmSuaNguyenLieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataMonAn);
+            this.Controls.Add(this.dataDonViNhap);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -169,7 +166,6 @@
             this.Text = "fmSuaNguyenLieuNhap";
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericFood)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataMonAn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,6 +183,6 @@
         private System.Windows.Forms.NumericUpDown numericFood;
         private System.Windows.Forms.Button btnThemMon;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.DataGridView dataMonAn;
+        private System.Windows.Forms.FlowLayoutPanel dataDonViNhap;
     }
 }

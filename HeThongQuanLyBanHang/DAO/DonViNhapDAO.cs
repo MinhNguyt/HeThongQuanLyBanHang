@@ -17,17 +17,48 @@ namespace HeThongQuanLyBanHang.DAO
             private set { DonViNhapDAO.instance = value; }
         }
         private DonViNhapDAO() { }
-        public List<HeThongQuanLyBanHang.DTO.MonAn> LayDSMonAn()
+        public List<DonViNhap> LayDSDonViNhap()
         {
-            List<HeThongQuanLyBanHang.DTO.MonAn> DSMonAn = new List<HeThongQuanLyBanHang.DTO.MonAn>();
-            string query = "Select * from MONAN where Trangthai = 0";
+            List<DonViNhap> DSDVN = new List<DonViNhap>();
+            string query = "Select * from DONVINHAP where Trangthai = 0";
             DataTable data = dataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in data.Rows)
             {
-                MonAn ma = new MonAn(item);
-                DSMonAn.Add(ma);
+                DonViNhap ma = new DonViNhap(item);
+                DSDVN.Add(ma);
             }
-            return DSMonAn;
+            return DSDVN;
+        }
+        public List<DonViNhap> TimDVNtheoTen(string TenDVN)
+        {
+            List<DonViNhap> DSDVN = new List<DonViNhap>();
+
+            string query = "Select * from DONVINHAP where TenDVNH like N'%" + TenDVN + "%' and Trangthai = 0";
+            DataTable data = dataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in data.Rows)
+            {
+                DonViNhap dvt = new DonViNhap(item);
+                DSDVN.Add(dvt);
+            }
+            return DSDVN;
+        }
+        public bool ThemDVN(string tenDVN, string diachiNH)
+        {
+            string query = string.Format("Insert into DONVINHAP(MaDV,TenDVNH,DiaChiNH)values(dbo.fmaDVN(),N'{0}',N'{1}')", tenDVN, diachiNH);
+            int result = dataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+        public bool SuaDVN(string maDV, string tenDVN, string diachiNH)
+        {
+            string query = string.Format("UPDATE DONVINHAP set TenDVNH =N'{0}',DiaChiNH = N'{1}' where MaDV ='{2}'", tenDVN, diachiNH,maDV);
+            int result = dataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+        public bool XoaDVN(string maDV)
+        {
+            string query = string.Format("UPDATE DONVINHAP set TrangThai = 9 where MaDV ='{0}'", maDV);
+            int result = dataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
         }
     }
 }

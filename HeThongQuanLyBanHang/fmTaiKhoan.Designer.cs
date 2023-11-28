@@ -28,25 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTenTK = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtChucVu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtTenTK
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox1.Location = new System.Drawing.Point(338, 131);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(288, 37);
-            this.textBox1.TabIndex = 21;
+            this.txtTenTK.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtTenTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenTK.Location = new System.Drawing.Point(338, 131);
+            this.txtTenTK.Multiline = true;
+            this.txtTenTK.Name = "txtTenTK";
+            this.txtTenTK.ReadOnly = true;
+            this.txtTenTK.Size = new System.Drawing.Size(288, 37);
+            this.txtTenTK.TabIndex = 21;
+            this.txtTenTK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -72,12 +75,17 @@
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(338, 188);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(288, 37);
+            this.textBox2.ReadOnly = true;
+            this.textBox2.ShortcutsEnabled = false;
+            this.textBox2.Size = new System.Drawing.Size(288, 36);
             this.textBox2.TabIndex = 26;
+            this.textBox2.Text = "Cơm Gà Gia Vĩnh";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -90,14 +98,17 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Tên doanh nghiệp";
             // 
-            // textBox3
+            // txtMatKhau
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox3.Location = new System.Drawing.Point(338, 245);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(288, 37);
-            this.textBox3.TabIndex = 28;
+            this.txtMatKhau.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Location = new System.Drawing.Point(338, 245);
+            this.txtMatKhau.Multiline = true;
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.ReadOnly = true;
+            this.txtMatKhau.Size = new System.Drawing.Size(288, 37);
+            this.txtMatKhau.TabIndex = 28;
+            this.txtMatKhau.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -110,14 +121,17 @@
             this.label4.TabIndex = 27;
             this.label4.Text = "Mật khẩu";
             // 
-            // textBox4
+            // txtChucVu
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox4.Location = new System.Drawing.Point(338, 305);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(288, 37);
-            this.textBox4.TabIndex = 30;
+            this.txtChucVu.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChucVu.Location = new System.Drawing.Point(338, 305);
+            this.txtChucVu.Multiline = true;
+            this.txtChucVu.Name = "txtChucVu";
+            this.txtChucVu.ReadOnly = true;
+            this.txtChucVu.Size = new System.Drawing.Size(288, 37);
+            this.txtChucVu.TabIndex = 30;
+            this.txtChucVu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -135,13 +149,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtChucVu);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTenTK);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "fmTaiKhoan";
@@ -152,14 +166,14 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTenTK;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtChucVu;
         private System.Windows.Forms.Label label5;
     }
 }
