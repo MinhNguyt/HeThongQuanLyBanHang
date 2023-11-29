@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTim = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataNhapHangHD = new System.Windows.Forms.DataGridView();
             this.btnSua = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btTimKiem = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataNhapHangHD)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtTim
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox1.Location = new System.Drawing.Point(230, 125);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 37);
-            this.textBox1.TabIndex = 15;
+            this.txtTim.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtTim.Location = new System.Drawing.Point(230, 125);
+            this.txtTim.Multiline = true;
+            this.txtTim.Name = "txtTim";
+            this.txtTim.Size = new System.Drawing.Size(232, 37);
+            this.txtTim.TabIndex = 15;
             // 
             // label2
             // 
@@ -67,23 +68,24 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "NHẬP HÀNG";
             // 
-            // dataGridView1
+            // dataNhapHangHD
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 237);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(743, 173);
-            this.dataGridView1.TabIndex = 19;
+            this.dataNhapHangHD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataNhapHangHD.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dataNhapHangHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataNhapHangHD.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dataNhapHangHD.Location = new System.Drawing.Point(33, 237);
+            this.dataNhapHangHD.Name = "dataNhapHangHD";
+            this.dataNhapHangHD.RowHeadersWidth = 51;
+            this.dataNhapHangHD.RowTemplate.Height = 24;
+            this.dataNhapHangHD.Size = new System.Drawing.Size(743, 173);
+            this.dataNhapHangHD.TabIndex = 19;
             // 
             // btnSua
             // 
             this.btnSua.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(532, 125);
+            this.btnSua.Location = new System.Drawing.Point(680, 185);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(82, 35);
             this.btnSua.TabIndex = 17;
@@ -91,29 +93,43 @@
             this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
+            // btTimKiem
+            // 
+            this.btTimKiem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimKiem.Location = new System.Drawing.Point(477, 125);
+            this.btTimKiem.Name = "btTimKiem";
+            this.btTimKiem.Size = new System.Drawing.Size(120, 37);
+            this.btTimKiem.TabIndex = 20;
+            this.btTimKiem.Text = "Tìm Kiếm";
+            this.btTimKiem.UseVisualStyleBackColor = false;
+            this.btTimKiem.Click += new System.EventHandler(this.btTimKiem_Click);
+            // 
             // fmNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btTimKiem);
+            this.Controls.Add(this.dataNhapHangHD);
             this.Controls.Add(this.btnSua);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTim);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "fmNhapHang";
             this.Text = "fmNhapHang";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataNhapHangHD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTim;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataNhapHangHD;
         private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btTimKiem;
     }
 }

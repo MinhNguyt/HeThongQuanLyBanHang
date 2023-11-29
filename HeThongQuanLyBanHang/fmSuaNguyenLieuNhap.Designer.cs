@@ -135,6 +135,7 @@
             this.btnThemMon.TabIndex = 5;
             this.btnThemMon.Text = "Thêm NL";
             this.btnThemMon.UseVisualStyleBackColor = false;
+            this.btnThemMon.Click += new System.EventHandler(this.btnThemMon_Click);
             // 
             // comboBox2
             // 

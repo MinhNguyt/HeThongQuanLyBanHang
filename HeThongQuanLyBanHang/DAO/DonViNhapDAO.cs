@@ -17,6 +17,10 @@ namespace HeThongQuanLyBanHang.DAO
             private set { DonViNhapDAO.instance = value; }
         }
         private DonViNhapDAO() { }
+
+        public static int tableWidth = 180;
+        public static int tableHeight = 25;
+
         public List<DonViNhap> LayDSDonViNhap()
         {
             List<DonViNhap> DSDVN = new List<DonViNhap>();
@@ -29,6 +33,22 @@ namespace HeThongQuanLyBanHang.DAO
             }
             return DSDVN;
         }
+        public List<DonViNhap> TaiDSDVNhap()
+        {
+            List<DonViNhap> DSDonViNhap = new List<DonViNhap>();
+
+            DataTable data = dataProvider.Instance.ExecuteQuery("exec USP_LayDSDonViNhap");
+
+            foreach (DataRow item in data.Rows)
+            {
+                DonViNhap donViNhap = new DonViNhap(item);
+                DSDonViNhap.Add(donViNhap);
+            }
+
+            return DSDonViNhap;
+        }
+
+
         public List<DonViNhap> TimDVNtheoTen(string TenDVN)
         {
             List<DonViNhap> DSDVN = new List<DonViNhap>();
